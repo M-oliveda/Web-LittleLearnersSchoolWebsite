@@ -1,0 +1,5 @@
+# node-related folder:
+/node_modules/
+
+# next.js related:
+.next
