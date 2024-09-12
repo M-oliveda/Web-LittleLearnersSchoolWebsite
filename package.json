@@ -1,0 +1,34 @@
+{
+  "name": "littlelearnerswebsite",
+  "version": "1.0.0",
+  "description": "This repository contains a web development project called 'LittleLearners'-. Tech skills: HTML, CSS, JavaScript, React and Next.js.",
+  "main": "index.js",
+  "repository": "https://github.com/M-oliveda/Web-LittleLearnersSchoolWebsite.git",
+  "author": "Mauricio Oliveda <maurioliveda@gmail.com>",
+  "license": "Apache-2.0",
+  "private": "true",
+  "type": "module",
+  "scripts": {
+    "test": "echo 'Hello, World!'",
+    "format": "prettier 'src/**' --write",
+    "format:check": "prettier --check 'src/**'",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^14.2.10",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.10",
+    "eslint-config-prettier": "^9.1.0",
+    "postcss": "^8.4.45",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.11"
+  }
+}
