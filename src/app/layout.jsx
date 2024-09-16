@@ -13,6 +13,10 @@ const outfitFont = Outfit({
   variable: "--font-outfit",
 });
 
+export const metadata = {
+  title: "LittleLearners | Web Development Project",
+};
+
 export default function RootLayout({ children }) {
   return (
     <html
