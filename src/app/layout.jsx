@@ -13,6 +13,15 @@ const outfitFont = Outfit({
   variable: "--font-outfit",
 });
 
+export const metadata = {
+  title: "LittleLearners | Web Development Project",
+  icons: {
+    favicon: "img/favicon.ico",
+    icon: "img/icon.svg",
+    apple: "img/apple-icon-180x180.png",
+  },
+};
+
 export default function RootLayout({ children }) {
   return (
     <html
