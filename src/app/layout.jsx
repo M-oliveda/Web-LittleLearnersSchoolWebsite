@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
       lang="en-CA"
       className={`${ralewayFont.variable} ${outfitFont.variable}`}
     >
-      <body>{children}</body>
+      <body className="bg-orange-97 px-4 pb-5 pt-10">{children}</body>
     </html>
   );
 }
