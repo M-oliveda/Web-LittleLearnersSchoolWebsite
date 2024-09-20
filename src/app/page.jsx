@@ -2,6 +2,7 @@ import Banner from "@/components/Banner";
 import WebsiteHeader from "@/components/WebsiteHeader";
 import HeroSection from "./layout/HeroSection";
 import BenefitsSection from "./layout/BenefitsSection";
+import TestimonialsSection from "./layout/TestimonialsSection";
 
 export default function HomePage() {
   return (
@@ -11,6 +12,7 @@ export default function HomePage() {
       <main className="mx-auto xl:w-[80%]">
         <HeroSection />
         <BenefitsSection />
+        <TestimonialsSection />
       </main>
     </>
   );
