@@ -34,7 +34,7 @@ const navLinks = [
 
 function NavLinks() {
   return navLinks.map((linkItem) => (
-    <li key={linkItem}>
+    <li key={linkItem.name}>
       <Link
         href={linkItem.path}
         className={`block px-[30px] py-[21px] font-medium text-grey-15 transition-colors xl:border-l-2 xl:border-l-grey-15 ${linkItem.name.toLowerCase() !== "contact" && "hover:text-orange-70"} ${linkItem.name.toLowerCase() === "contact" && "text-orange-70 hover:text-white xl:bg-orange-70 xl:text-inherit"}`}
