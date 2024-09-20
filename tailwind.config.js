@@ -31,6 +31,11 @@ const config = {
         sans: ["var(--font-outfit)"],
         headings: ["var(--font-raleway)"],
       },
+      dropShadow: {
+        customone: "4px 4px 1px #FFBE99",
+        customonexl: "6px 6px 1px #FFBE99",
+        customone2xl: "8px 8px 1px #FFBE99",
+      },
     },
   },
   plugins: [],
