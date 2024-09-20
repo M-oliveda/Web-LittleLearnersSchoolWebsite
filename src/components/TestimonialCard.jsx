@@ -5,7 +5,13 @@ export default function TestimonialCard(props) {
   return (
     <article className="mx-auto flex h-[95%] w-[90%] flex-col items-center gap-5 border-2 border-grey-15 bg-white p-[30px] drop-shadow-customone">
       <div className="inline-block rounded-full bg-orange-90 p-[10px]">
-        <Image src={props.image} width={50} height={50} alt="Profile image." />
+        <Image
+          src={props.image}
+          width={50}
+          height={50}
+          alt="Profile image."
+          style={{ width: "100%", height: "auto" }}
+        />
       </div>
       <h3 className="text-xl font-semibold text-grey-20 2xl:text-2xl">
         {props.name}
