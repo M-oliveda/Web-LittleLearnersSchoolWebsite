@@ -45,11 +45,6 @@ const questionsData = [
       "We offer a wide range of extracurricular activities, including arts and crafts, music, sports, and language clubs, to help students explore their interests beyond the classroom.",
   },
   {
-    question: "What extracurricular activities are available for students?",
-    answer:
-      "We offer a wide range of extracurricular activities, including arts and crafts, music, sports, and language clubs, to help students explore their interests beyond the classroom.",
-  },
-  {
     question: "How do you handle food allergies and dietary restrictions?",
     answer:
       "We take food allergies and dietary restrictions very seriously. Our staff works closely with parents to ensure that meals and snacks are safe for each child. Special accommodations are made to prevent exposure to allergens.",
@@ -59,11 +54,6 @@ const questionsData = [
       "What is the teacher-to-student ratio at Little Learners Academy?",
     answer:
       "Our teacher-to-student ratio is 1:10, ensuring personalized attention and a supportive learning environment for all students.",
-  },
-  {
-    question: "How do you handle discipline and behavior management?",
-    answer:
-      "We use positive reinforcement and age-appropriate behavior management techniques to encourage good behavior. Our goal is to help children learn self-regulation and respect for others.",
   },
   {
     question: "How do you handle discipline and behavior management?",
