@@ -3,6 +3,7 @@ import WebsiteHeader from "@/components/WebsiteHeader";
 import HeroSection from "./layout/HeroSection";
 import BenefitsSection from "./layout/BenefitsSection";
 import TestimonialsSection from "./layout/TestimonialsSection";
+import FAQSection from "./layout/FAQSection";
 
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
         <HeroSection />
         <BenefitsSection />
         <TestimonialsSection />
+        <FAQSection />
       </main>
     </>
   );
