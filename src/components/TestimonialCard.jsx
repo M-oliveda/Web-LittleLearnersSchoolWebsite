@@ -11,7 +11,7 @@ export default function TestimonialCard(props) {
         {props.name}
       </h3>
       <div className="flex gap-1">
-        {new Array(props.stars).map((star) => (
+        {[...Array(props.stars)].map((star) => (
           <StarIcon
             key={star + Math.random()}
             className="h-5 w-5 text-orange-65 2xl:h-6 2xl:w-6"
