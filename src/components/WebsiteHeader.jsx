@@ -6,26 +6,40 @@ import Link from "next/link";
 import { useState } from "react";
 
 const navLinks = [
-  "Home",
-  "About Us",
-  "Academics",
-  "Admissions",
-  "Student Life",
-  "Contact",
+  {
+    name: "home",
+    path: "/",
+  },
+  {
+    name: "about us",
+    path: "/about",
+  },
+  {
+    name: "academics",
+    path: "/academics",
+  },
+  {
+    name: "admissions",
+    path: "/admissions",
+  },
+  {
+    name: "student life",
+    path: "/studentlife",
+  },
+  {
+    name: "contact",
+    path: "/contact",
+  },
 ];
 
 function NavLinks() {
   return navLinks.map((linkItem) => (
     <li key={linkItem}>
       <Link
-        href={
-          linkItem.toLowerCase() === "home"
-            ? "/"
-            : linkItem.toLowerCase().split(" ").join("")
-        }
-        className={`block px-[30px] py-[21px] font-medium text-grey-15 transition-colors xl:border-l-2 xl:border-l-grey-15 ${linkItem.toLowerCase() !== "contact" && "hover:text-orange-70"} ${linkItem.toLowerCase() === "contact" && "text-orange-70 hover:text-white xl:bg-orange-70 xl:text-inherit"}`}
+        href={linkItem.path}
+        className={`block px-[30px] py-[21px] font-medium text-grey-15 transition-colors xl:border-l-2 xl:border-l-grey-15 ${linkItem.name.toLowerCase() !== "contact" && "hover:text-orange-70"} ${linkItem.name.toLowerCase() === "contact" && "text-orange-70 hover:text-white xl:bg-orange-70 xl:text-inherit"}`}
       >
-        {linkItem[0].toUpperCase() + linkItem.substring(1)}
+        {linkItem.name[0].toUpperCase() + linkItem.name.substring(1)}
       </Link>
     </li>
   ));
