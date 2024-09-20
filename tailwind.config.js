@@ -32,9 +32,9 @@ const config = {
         headings: ["var(--font-raleway)"],
       },
       dropShadow: {
-        customone: "4px 4px 1px #FFBE99",
-        customonexl: "6px 6px 1px #FFBE99",
-        customone2xl: "8px 8px 1px #FFBE99",
+        customone: "4px 4px 1px #1E1E1E",
+        customonexl: "6px 6px 1px #1E1E1E",
+        customone2xl: "8px 8px 1px #1E1E1E",
       },
     },
   },
