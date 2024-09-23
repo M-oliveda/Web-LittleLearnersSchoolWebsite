@@ -43,7 +43,7 @@ export default function Carousel({ children, title }) {
         <button
           type="button"
           onClick={scrollPrev}
-          className="rounded-lg border-2 border-grey-20 bg-white p-3 disabled:opacity-70 xl:absolute xl:left-0 xl:top-1/2"
+          className="rounded-lg border-2 border-grey-20 bg-white p-3 disabled:opacity-70 xl:absolute xl:-left-[25px] xl:top-1/2 2xl:left-0"
           disabled={!canScrollPrev}
         >
           <ArrowLeftIcon className="w-3" />
@@ -51,7 +51,7 @@ export default function Carousel({ children, title }) {
         <button
           type="button"
           onClick={scrollNext}
-          className="rounded-lg border-2 border-grey-20 bg-white p-3 disabled:opacity-70 xl:absolute xl:right-0 xl:top-1/2"
+          className="rounded-lg border-2 border-grey-20 bg-white p-3 disabled:opacity-70 xl:absolute xl:-right-[50px] xl:top-1/2 2xl:right-0"
           disabled={!canScrollNext}
         >
           <ArrowRightIcon className="w-3" />
