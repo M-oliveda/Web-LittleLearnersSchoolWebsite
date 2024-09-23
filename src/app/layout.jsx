@@ -1,5 +1,8 @@
+import Banner from "@/components/Banner";
 import "./globals.css";
 import { Raleway, Outfit } from "next/font/google";
+import WebsiteHeader from "@/components/WebsiteHeader";
+import WebsiteFooter from "@/components/WebsiteFooter";
 
 const ralewayFont = Raleway({
   subsets: ["latin"],
@@ -28,7 +31,12 @@ export default function RootLayout({ children }) {
       lang="en-CA"
       className={`${ralewayFont.variable} ${outfitFont.variable}`}
     >
-      <body className="bg-orange-97 px-4 pb-5 pt-10">{children}</body>
+      <body className="bg-orange-97 px-4 pb-5 pt-10">
+        <Banner text="Admission is Open, Grab your seat now" />
+        <WebsiteHeader />
+        {children}
+        <WebsiteFooter />
+      </body>
     </html>
   );
 }
