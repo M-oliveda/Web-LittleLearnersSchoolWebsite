@@ -5,6 +5,7 @@ import BenefitsSection from "./layout/BenefitsSection";
 import TestimonialsSection from "./layout/TestimonialsSection";
 import FAQSection from "./layout/FAQSection";
 import PagesSection from "./layout/PagesSection";
+import WebsiteFooter from "@/components/WebsiteFooter";
 
 export default function HomePage() {
   return (
@@ -18,6 +19,7 @@ export default function HomePage() {
         <FAQSection />
         <PagesSection />
       </main>
+      <WebsiteFooter />
     </>
   );
 }
