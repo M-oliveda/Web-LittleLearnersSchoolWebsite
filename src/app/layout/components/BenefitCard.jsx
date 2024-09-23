@@ -1,6 +1,6 @@
 export default function BenefitCard(props) {
   return (
-    <article className="rounded-[10px] border-2 border-grey-15 bg-white pb-[30px] pl-[30px] pr-[40px]">
+    <article className="rounded-[10px] border-2 border-grey-15 bg-white pb-[30px] pl-[30px] pr-[40px] drop-shadow-customone 2xl:drop-shadow-customonexl">
       <div className="-mt-6 inline-block rounded-lg border-2 border-grey-15 bg-orange-90 p-4">
         {props.icon}
       </div>
