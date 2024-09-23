@@ -1,6 +1,7 @@
 import Image from "next/image";
 import HeroAbstractDesign from "./components/HeroAbstractDesign";
 import HeroStatisticItem from "./components/HeroStatisticsItem";
+import * as motion from "framer-motion/client";
 
 import heroImage from "@/../public/img/hero-image.png";
 
@@ -31,11 +32,16 @@ export default function HeroSection() {
             environment, fostering a love for learning that lasts a lifetime.
             Join us as we embark on an exciting educational journey together!
           </p>
-          <div className="space-y-5 rounded-[10px] border-2 border-grey-15 bg-orange-95 p-10 drop-shadow-customone xl:flex xl:items-center xl:justify-between xl:space-y-0 xl:py-5 xl:drop-shadow-customonexl 2xl:drop-shadow-customone2xl">
+          <motion.div
+            className="space-y-5 rounded-[10px] border-2 border-grey-15 bg-orange-95 p-10 drop-shadow-[4px_4px_0_#FFBE99] xl:flex xl:items-center xl:justify-between xl:space-y-0 xl:py-5 xl:drop-shadow-[6px_6px_0_#FFBE99] 2xl:drop-shadow-[8px_8px_0_#FFBE99]"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1 }}
+          >
             <HeroStatisticItem number={7000} text="Students Passed Out" />
             <HeroStatisticItem number={37} text="Awards & Recognitions" />
             <HeroStatisticItem number={15} text="Experience Educators" />
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
