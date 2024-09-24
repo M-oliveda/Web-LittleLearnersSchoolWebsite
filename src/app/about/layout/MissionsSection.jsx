@@ -45,6 +45,7 @@ export default function MissionsSection() {
             icon={item.icon}
             key={item.title}
             description={item.description}
+            id={`our${title.toLowerCase()}`}
           />
         ))}
       </div>

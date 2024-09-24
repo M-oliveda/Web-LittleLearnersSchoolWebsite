@@ -5,7 +5,7 @@ export default function HistorySection() {
   return (
     <section
       className="mx-auto my-20 max-w-[1596px] space-y-[50px] xl:my-[154px] xl:space-y-20 2xl:my-[200px] 2xl:space-y-[100px]"
-      id="awards"
+      id="history"
     >
       <div className="flex flex-col items-center gap-[10px] xl:gap-[14px] 2xl:gap-[19px]">
         <MessageCard>Our Progressive Journey</MessageCard>
