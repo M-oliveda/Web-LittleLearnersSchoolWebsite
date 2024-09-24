@@ -29,7 +29,7 @@ function LinkTree(props) {
           className="max-w-[135px] font-medium text-grey-20 2xl:text-xl"
           key={item.subpath}
         >
-          <Link href={`${props.root.path}#f${item.subpath}`}>{item.name}</Link>
+          <Link href={`${props.root.path}#${item.subpath}`}>{item.name}</Link>
         </li>
       ))}
     </ul>
