@@ -1,5 +1,6 @@
 import WebsiteHero from "@/components/WebsiteHero";
 import AcademicsFeatures from "./layout/AcademicsFeaturesSection";
+import StudentsLearnSection from "./layout/StudentsLearnSection";
 
 export default function AcademicsPage() {
   return (
@@ -16,6 +17,7 @@ export default function AcademicsPage() {
         curiosity and encourage active exploration."
       />
       <AcademicsFeatures />
+      <StudentsLearnSection />
     </main>
   );
 }
