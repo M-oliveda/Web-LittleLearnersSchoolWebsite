@@ -3,7 +3,10 @@ import QuestionAnswerItem from "@/components/QuestionAnswerItem";
 
 export default function FAQSection() {
   return (
-    <section className="my-20 space-y-12 xl:my-[150px] xl:space-y-20 2xl:my-[200px] 2xl:space-y-[100px]">
+    <section
+      className="my-20 space-y-12 xl:my-[150px] xl:space-y-20 2xl:my-[200px] 2xl:space-y-[100px]"
+      id="faq"
+    >
       <div className="flex flex-col items-center gap-[10px] xl:gap-[14px] 2xl:gap-[19px]">
         <MessageCard>Solutions For The Doubts</MessageCard>
         <h2 className="text-center font-headings text-[38px] font-bold text-grey-10 xl:text-[48px] 2xl:text-[58px]">

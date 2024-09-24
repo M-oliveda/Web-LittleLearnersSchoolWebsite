@@ -10,7 +10,10 @@ import BenefitCard from "./components/BenefitCard";
 
 export default function BenefitsSection() {
   return (
-    <section className="my-20 space-y-12 xl:my-[150px] xl:space-y-20 2xl:my-[200px] 2xl:space-y-[100px]">
+    <section
+      className="my-20 space-y-12 xl:my-[150px] xl:space-y-20 2xl:my-[200px] 2xl:space-y-[100px]"
+      id="features"
+    >
       <div className="flex flex-col items-center gap-[10px] xl:gap-[14px] 2xl:gap-[19px]">
         <p className="rounded-md border-2 border-black bg-white px-[14px] py-2 text-sm font-medium text-grey-20 xl:text-base 2xl:px-5 2xl:py-[10px] 2xl:text-lg">
           Children Deserve Bright Future
