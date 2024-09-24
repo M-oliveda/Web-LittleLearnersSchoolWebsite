@@ -2,6 +2,7 @@ import AwardsSection from "./layout/AwardsSection";
 import HeroSection from "./layout/HeroSection";
 import HistorySection from "./layout/HistorySection";
 import MissionsSection from "./layout/MissionsSection";
+import TeamsSection from "./layout/TeamsSection";
 
 export default function AboutUsPage() {
   return (
@@ -10,6 +11,7 @@ export default function AboutUsPage() {
       <MissionsSection />
       <AwardsSection />
       <HistorySection />
+      <TeamsSection />
     </main>
   );
 }
