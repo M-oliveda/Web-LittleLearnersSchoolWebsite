@@ -6,7 +6,10 @@ import Image from "next/image";
 
 function MissionCard(props) {
   return (
-    <article className="space-y-10 rounded-[10px] border-2 border-grey-15 bg-white p-10 drop-shadow-customone xl:p-[50px] 2xl:p-[60px] 2xl:drop-shadow-customonexl">
+    <article
+      id={props.id}
+      className="space-y-10 rounded-[10px] border-2 border-grey-15 bg-white p-10 drop-shadow-customone xl:p-[50px] 2xl:p-[60px] 2xl:drop-shadow-customonexl"
+    >
       <div className="flex items-center justify-between">
         <h3 className="font-headings text-[30px] font-bold text-grey-10 xl:text-[38px] 2xl:text-[48px]">
           {props.title}
@@ -45,7 +48,7 @@ export default function MissionsSection() {
             icon={item.icon}
             key={item.title}
             description={item.description}
-            id={`our${title.toLowerCase()}`}
+            id={`our${item.title.toLowerCase()}`}
           />
         ))}
       </div>
