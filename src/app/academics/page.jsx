@@ -1,6 +1,7 @@
 import WebsiteHero from "@/components/WebsiteHero";
 import AcademicsFeaturesSection from "./layout/AcademicsFeaturesSection";
 import StudentsLearnSection from "./layout/StudentsLearnSection";
+import RoomsSection from "./layout/RoomsSection";
 
 export default function AcademicsPage() {
   return (
@@ -18,6 +19,7 @@ export default function AcademicsPage() {
       />
       <AcademicsFeaturesSection />
       <StudentsLearnSection />
+      <RoomsSection />
     </main>
   );
 }
