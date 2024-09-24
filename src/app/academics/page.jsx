@@ -1,5 +1,5 @@
 import WebsiteHero from "@/components/WebsiteHero";
-import AcademicsFeatures from "./layout/AcademicsFeaturesSection";
+import AcademicsFeaturesSection from "./layout/AcademicsFeaturesSection";
 import StudentsLearnSection from "./layout/StudentsLearnSection";
 
 export default function AcademicsPage() {
@@ -16,7 +16,7 @@ export default function AcademicsPage() {
         science and social studies, our curriculum is carefully crafted to spark
         curiosity and encourage active exploration."
       />
-      <AcademicsFeatures />
+      <AcademicsFeaturesSection />
       <StudentsLearnSection />
     </main>
   );

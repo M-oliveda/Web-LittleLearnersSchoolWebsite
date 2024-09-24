@@ -9,7 +9,7 @@ import {
   SunIcon,
 } from "@heroicons/react/20/solid";
 
-export default function AcademicsFeatures() {
+export default function AcademicsFeaturesSection() {
   return (
     <WebsiteSection
       id="specialfeatures"
