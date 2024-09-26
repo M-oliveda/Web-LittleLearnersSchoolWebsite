@@ -1,6 +1,6 @@
 export default function TextCard(props) {
   return (
-    <article className="mx-3 my-7 max-w-[504px] flex-grow rounded-[10px] border-2 border-grey-15 bg-white pb-[30px] pl-[30px] pr-[40px] drop-shadow-customone 2xl:drop-shadow-customonexl">
+    <article className="mx-3 my-7 max-w-[504px] flex-grow rounded-[10px] border-2 border-grey-15 bg-white pb-[30px] pl-[30px] pr-[40px] drop-shadow-customone xl:m-0 2xl:drop-shadow-customonexl">
       <div className="-mt-6 inline-block rounded-lg border-2 border-grey-15 bg-orange-90 p-4">
         {props.icon}
       </div>
