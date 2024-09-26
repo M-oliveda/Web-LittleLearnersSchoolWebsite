@@ -1,6 +1,7 @@
 import WebsiteHero from "@/components/WebsiteHero";
 import WebsiteSection from "@/components/WebsiteSection";
 import AdmissionSteps from "./components/AdmissionSteps";
+import FeesSection from "./layout/FeesSection";
 
 export default function AdmissionsPage() {
   return (
@@ -17,6 +18,14 @@ export default function AdmissionsPage() {
         paragraph="Embark on a remarkable educational journey with us! Our Admission and Enrollment process is the gateway to providing your child with an exceptional learning experience at our kindergarten school"
       >
         <AdmissionSteps />
+      </WebsiteSection>
+      <WebsiteSection
+        id="fees"
+        message="Our Features"
+        title="Fee Structure"
+        paragraph="Our fee structure is transparent, and we strive to keep our fees competitive within the education sector. The fees vary based on the program, age group, and any additional services chosen."
+      >
+        <FeesSection />
       </WebsiteSection>
     </main>
   );
