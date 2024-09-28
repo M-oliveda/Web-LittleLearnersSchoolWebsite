@@ -15,12 +15,15 @@ export default function ContactForm() {
       return;
     }
 
-    sendMail(formData);
-    formRef.current.reset();
-    setOpenConfirmationMessage(true);
-    setTimeout(() => {
-      setOpenConfirmationMessage(false);
-    }, 2000);
+    const result = sendMail(formData);
+
+    if (result) {
+      formRef.current.reset();
+      setOpenConfirmationMessage(true);
+      setTimeout(() => {
+        setOpenConfirmationMessage(false);
+      }, 2000);
+    }
   }
 
   return (
