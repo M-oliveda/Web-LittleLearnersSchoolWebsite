@@ -1,0 +1,14 @@
+# node-related folder:
+/node_modules/
+
+# next.js related:
+.next
+
+# apple related:
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
+
+# enviroment variables
+.env

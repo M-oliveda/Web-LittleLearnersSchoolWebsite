@@ -39,3 +39,13 @@ To start a next.js **production server,** run:
 ```
 
 I recommend you check the `package.json` file to see more tools, libraries and other CLI commands related to this project.
+
+## Configuration and Environment Variables
+
+This project uses different Environment variables to configure the application functionality. The following list shows each variable along its definition.
+
+_You need to pass the variables so the application can run._
+
+- `NODEMAILER_FROM_EMAIL`: The email used for `nodemailer` configuration.
+- `NODEMAILER_TRANSPORT_EMAIL`: The email used on `nodemailer` for authentication.
+- `NODEMAILER_TRANSPORT_PASSWORD`= The password used on `nodemailer` for authentication.
