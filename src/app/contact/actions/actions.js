@@ -2,13 +2,15 @@
 
 import fs from "node:fs";
 
-import { default as nodemailer } from "nodemailer";
+import { createTransport } from "nodemailer";
 import { compile } from "handlebars";
+import { google } from "googleapis";
 
 import {
-  NODEMAILER_FROM_EMAIL,
-  NODEMAILER_TRANSPORT_EMAIL,
-  NODEMAILER_TRANSPORT_PASSWORD,
+  GOOGLE_CLIENT_ID,
+  GOOGLE_CLIENT_SECRET,
+  GOOGLE_EMAIL,
+  GOOGLE_REFRESH_TOKEN,
 } from "@/config/config";
 
 export async function sendMail(formData) {
@@ -39,35 +41,46 @@ async function sendEmail(email, parentName) {
   const template = compile(emailTemplateFile);
   const html = template({ parentName });
 
-  const transponder = nodemailer.createTransport({
-    service: "gmail",
-    host: "smtp.gmail.com",
-    port: 465,
-    secure: true,
-    auth: {
-      user: NODEMAILER_TRANSPORT_EMAIL,
-      pass: NODEMAILER_TRANSPORT_PASSWORD,
-    },
-  });
-
-  const mailOptions = {
-    from: NODEMAILER_FROM_EMAIL,
-    to: email,
-    subject: "School Learners Web Project",
-    html,
-  };
+  const oauth2 = google.auth.OAuth2;
+  const myOAuth2Client = new oauth2(GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET);
 
   let success = null;
 
-  transponder.sendMail(mailOptions, (err, info) => {
-    if (err) {
-      console.log(`There was an error when trying send the mail: ${err}`);
-      success = false;
-    } else {
-      console.log(`Email sent: ${info.response}`);
-      success = true;
-    }
-  });
+  try {
+    myOAuth2Client.setCredentials({
+      refresh_token: GOOGLE_REFRESH_TOKEN,
+    });
+
+    const accessToken = await myOAuth2Client.getAccessToken();
+    const transportOptions = {
+      service: "gmail",
+      auth: {
+        type: "OAuth2",
+        user: GOOGLE_EMAIL,
+        clientId: GOOGLE_CLIENT_ID,
+        refreshToken: GOOGLE_REFRESH_TOKEN,
+        accessToken: accessToken.token,
+      },
+    };
+
+    const smtpTransport = createTransport(transportOptions);
+    const mailOptions = {
+      from: {
+        name: "Little Learners School Website",
+        address: GOOGLE_EMAIL,
+      },
+      to: email,
+      subject: "School Learnes Web Project | Contact",
+      html,
+    };
+    const info = await smtpTransport.sendMail(mailOptions);
+
+    console.log(`Email sent: ${info.response}`);
+    success = true;
+  } catch (error) {
+    console.log(`There was an error when trying send the mail: ${err}`);
+    success = false;
+  }
 
   return success;
 }
