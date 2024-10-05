@@ -77,7 +77,7 @@ async function sendEmail(email, parentName) {
 
     console.log(`Email sent: ${info.response}`);
     success = true;
-  } catch (error) {
+  } catch (err) {
     console.log(`There was an error when trying send the mail: ${err}`);
     success = false;
   }
