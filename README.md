@@ -46,6 +46,8 @@ This project uses different Environment variables to configure the application f
 
 _You need to pass the variables so the application can run._
 
-- `NODEMAILER_FROM_EMAIL`: The email used for `nodemailer` configuration.
-- `NODEMAILER_TRANSPORT_EMAIL`: The email used on `nodemailer` for authentication.
-- `NODEMAILER_TRANSPORT_PASSWORD`= The password used on `nodemailer` for authentication.
+- `GOOGLE_CLIENT_ID`= The Google client ID.
+- `GOOGLE_CLIENT_SECRET` = The Google Client Secret.
+- `GOOGLE_REFRESH_TOKEN` = The Google refresh token.
+- `GOOGLE_REDIRECT_URI` = The Google redirect URI, which is `https://developers.google.com/oauthplayground`
+- `GOOGLE_EMAIL` = Your Google email address.
